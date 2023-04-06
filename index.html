@@ -1,32 +1,555 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
-    <link rel="stylesheet" href="css/base.css">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Nunito+Sans:wght@400;600&family=Poppins:wght@400;500;600;800&family=Roboto+Slab&family=Rubik:wght@600&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/base.css">
 </head>
+
 <body>
 
-    <!-- Начало: Данный блок удалять нельзя -->
-    <div class="maketforfigma">
-        <a href="https://t.me/s/FigmaToHTML" target="_blank">
-            <img src="img/logo.png">
-        </a>
-        <div>
-            <p>
-                Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
-            </p>
-            <p>
-                При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a> пользователь получил оплату за верстку этого макета.
-            </p>
-        </div>
-    </div>
-    <!-- Конец -->
+	<!-- Начало: Данный блок удалять нельзя -->
+	<div class="maketforfigma">
+		<a href="https://t.me/s/FigmaToHTML" target="_blank">
+			<img src="img/logo.png">
+		</a>
+		<div>
+			<p>
+				Данная верстка, была реализована пользователем в рамках обучающего телеграм канал <a
+					href="https://t.me/s/FigmaToHTML" target="_blank">FIGMA | Макеты для верстки</a>
+			</p>
+			<p>
+				При помощи <a href="https://t.me/HtmlCodeForMoney_bot?from_git" target="_blank">Telegram-бота</a>
+				пользователь получил оплату за верстку этого макета.
+			</p>
+		</div>
+	</div>
+	<!-- Конец -->
 
-    <div class="main">
-        В данном блоке размещается верстка
-    </div>
+	<div class="main">
+
+		<!-- header -->
+		<header class="header">
+			<div class="container">
+				<nav class="menu">
+					<a class="menu__logo" href="#">
+						<span>M</span>
+						Mulih
+					</a>
+					<div class="menu__nav">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">Home</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">Property</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">About</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">Service</a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__item-link" href="#">Contact</a>
+							</li>
+						</ul>
+						<div class="menu__user">
+							<a class="menu__user-link menu__user-link--green" href="#">Sign in</a>
+							<a class="menu__user-link" href="#">Login</a>
+						</div>
+					</div>
+				</nav> <!-- menu -->
+
+				<!-- title-->
+				<h3 class="header__section-name section-name">REAL ESTATE</h3>
+				<h2 class="header__title">Let's hunt for your dream residence</h2>
+				<h1 class="header__subtitle">Explore our range of beautiful properties with the addition of separate
+					accommodation suitable for you.</h1>
+
+				<!-- form-->
+				<div class="header__button-box">
+					<button class="header__btn btn-buy active" type="button">Buy</button>
+					<button class="header__btn btn-rent" type="button">Rent</button>
+				</div>
+				<!-- form-buy-->
+				<form class="header__form form-buy">
+					<div class="header__form-inner">
+						<label for="location">Location</label>
+						<select class="header__select" name="location" id="location">
+							<option value="1">Bogor, Jawa Barat</option>
+							<option value="1">Bogor, Jawa Barat</option>
+							<option value="1">Bogor, Jawa Barat</option>
+						</select>
+					</div>
+					<div class="header__form-inner">
+						<label for="type">Type</label>
+						<select class="header__select" name="location" id="location">
+							<option value="1">Home</option>
+							<option value="1">Home</option>
+							<option value="1">Home</option>
+						</select>
+					</div>
+					<div class="header__form-inner">
+						<label for="price">Price Range</label>
+						<select class="header__select" name="location" id="location">
+							<option value="1">$200-$350</option>
+							<option value="1">$200-$350</option>
+							<option value="1">$200-$350</option>
+						</select>
+					</div>
+					<a class="header__form-link button" href="#"">Search</a>
+				</form>
+				<!-- form-buy-->
+				<form class=" header__form form-rent form-close">
+						<div class="header__form-inner">
+							<label for="location">Location</label>
+							<select class="header__select" name="location" id="location">
+								<option value="1">Bogor, Barat</option>
+								<option value="1">Bogor, Jawa Barat</option>
+								<option value="1">Bogor, Jawa Barat</option>
+							</select>
+						</div>
+						<div class="header__form-inner">
+							<label for="type">Type</label>
+							<select class="header__select" name="location" id="location">
+								<option value="1">Home</option>
+								<option value="1">Home</option>
+								<option value="1">Home</option>
+							</select>
+						</div>
+						<div class="header__form-inner">
+							<label for="price">Price Range</label>
+							<select class="header__select" name="location" id="location">
+								<option value="1">$10-$20</option>
+								<option value="1">$30-$40</option>
+								<option value="1">$200-$350</option>
+							</select>
+						</div>
+						<a class="header__form-link button" href="#"">Search</a>
+				</form> <!-- form-->
+
+			</div> <!-- container -->
+		</header>
+
+		<!-- discover -->
+		<section class=" discover">
+							<div class="container">
+								<div class="discover__top-wrapper">
+									<div class="discover__title-block">
+										<p class="discover__section-name section-name">DISCOVER</p>
+										<p class="discover__title title">Best recomendation</p>
+										<h2 class="discover__subtitle subtitle">Discover our exclusive selection of the finest
+											one-of-a-kind luxury properties architectural masterpieces.</h2>
+									</div>
+									<a class="learn-more" href="#">
+										Learn more
+										<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M20.0001 10C20.0001 15.52 15.5101 20 10.0001 20L9.72036 19.9962C4.32954 19.8478 0.00012207 15.4264 0.00012207 10C0.00012207 4.49 4.48012 0 10.0001 0C15.5101 0 20.0001 4.49 20.0001 10ZM8.02012 6C7.73012 6.3 7.73012 6.77 8.03012 7.06L10.9801 10L8.03012 12.94C7.73012 13.23 7.73012 13.71 8.02012 14C8.32012 14.3 8.79012 14.3 9.08012 14L12.5701 10.53C12.7101 10.39 12.7901 10.2 12.7901 10C12.7901 9.8 12.7101 9.61 12.5701 9.47L9.08012 6C8.94012 5.85 8.75012 5.78 8.56012 5.78C8.36012 5.78 8.17012 5.85 8.02012 6Z"
+												fill="#69B99D" />
+										</svg>
+									</a>
+								</div>
+								<ul class="discover__cards-list">
+									<li class="discover__cards-item">
+										<a class="discover__cards-item-link" href="#">
+											<img class="card-img" src="./img/pic/1.jpg" alt="">
+											<div class="card-content">
+												<h3 class="card-title">Perum griya asri</h3>
+												<p class="card-location">Bogor, Jawa Barat</p>
+												<div class="card-desc">
+													<span class="card-price">$25,000</span>
+													<div class="card-feature">360m<sup>2</sup>
+														<span>Living area</span>
+													</div>
+												</div>
+											</div>
+											<div class="cards-btn">Send Inquiry</div>
+										</a>
+									</li>
+									<li class="discover__cards-item">
+										<a class="discover__cards-item-link" href="#">
+											<img class="card-img" src="./img/pic/2.jpg" alt="">
+											<div class="card-content">
+												<h3 class="card-title">Perum kencana asri</h3>
+												<p class="card-location">Bogor, Jawa Barat</p>
+												<div class="card-desc">
+													<span class="card-price">$35,000</span>
+													<div class="card-feature">360m<sup>2</sup>
+														<span>Living area</span>
+													</div>
+												</div>
+											</div>
+											<div class="cards-btn">Send Inquiry</div>
+										</a>
+									</li>
+									<li class="discover__cards-item">
+										<a class="discover__cards-item-link" href="#">
+											<img class="card-img" src="./img/pic/3.jpg" alt="">
+											<div class="card-content">
+												<h3 class="card-title">Perum rakjel elit</h3>
+												<p class="card-location">Bogor, Jawa Barat</p>
+												<div class="card-desc">
+													<span class="card-price">$40,000</span>
+													<div class="card-feature">360m<sup>2</sup>
+														<span>Living area</span>
+													</div>
+												</div>
+											</div>
+											<div class="cards-btn">Send Inquiry</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+		</section>
+
+		<!-- advantage -->
+		<section class="advantage">
+								<div class="container">
+									<h2 class="advantage__section-name section-name">OUR ADVANTE</h2>
+									<p class="advantage__title title">Giving you peace of mind</p>
+									<ul class="advantage__list">
+										<li class="advantage__item">
+											<svg width="46" height="44" viewBox="0 0 46 44" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M31.662 0.62658C33.0818 0.62658 34.4993 0.82683 35.847 1.27908C44.1518 3.97908 47.1443 13.0916 44.6445 21.0566C43.227 25.1268 40.9095 28.8416 37.8743 31.8768C33.5295 36.0843 28.7618 39.8194 23.6295 43.0368L23.067 43.3766L22.482 43.0144C17.3318 39.8194 12.537 36.0844 8.1518 31.8543C5.1368 28.8191 2.81705 25.1268 1.37705 21.0566C-1.16545 13.0916 1.82705 3.97908 10.2218 1.23183C10.8743 1.00683 11.547 0.84933 12.222 0.76158H12.492C13.1243 0.66933 13.752 0.62658 14.382 0.62658H14.6295C16.047 0.66933 17.4195 0.91683 18.7493 1.36908H18.882C18.972 1.41183 19.0395 1.45908 19.0845 1.50183C19.5818 1.66158 20.052 1.84158 20.502 2.08908L21.357 2.47158C21.5636 2.58177 21.7955 2.75013 21.996 2.89564C22.1229 2.98783 22.2373 3.07085 22.3245 3.12408C22.3613 3.14574 22.3986 3.16753 22.4362 3.18949C22.6291 3.30211 22.8301 3.41942 22.9995 3.54933C25.4993 1.63908 28.5345 0.60408 31.662 0.62658ZM37.6471 16.8266C38.5696 16.8018 39.357 16.0616 39.4245 15.1143V14.8466C39.492 11.6943 37.5818 8.83908 34.6771 7.73659C33.7546 7.41933 32.7421 7.91658 32.4046 8.86158C32.0896 9.80658 32.5846 10.8416 33.5296 11.1768C34.9718 11.7168 35.9371 13.1366 35.9371 14.7093V14.7791C35.8943 15.2943 36.0496 15.7916 36.3646 16.1741C36.6796 16.5566 37.1521 16.7793 37.6471 16.8266Z"
+													fill="#69B99D" />
+											</svg>
+											<h3 class="advantage__item-title">Comfortable</h3>
+											<p class="advantage__item-text">Enjoy lifestyle amenities designed to provide every
+												homeowners modern comfort, a stone's throw away from schools, churches, and
+												hospitals.
+											</p>
+										</li>
+										<li class="advantage__item">
+											<svg width="40" height="46" viewBox="0 0 40 46" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M19.3882 45.3057C19.6374 45.4359 19.916 45.5021 20.1946 45.4999C20.4732 45.4977 20.7496 45.4293 21.001 45.2969L29.0287 41.0055C31.3052 39.792 33.0879 38.4351 34.4787 36.8554C37.5027 33.4135 39.154 29.0206 39.1246 24.4909L39.0294 9.54946C39.0204 7.8285 37.89 6.29287 36.2184 5.73466L21.2842 0.724019C20.3849 0.419542 19.3995 0.426161 18.5161 0.739464L3.63855 5.92882C1.97592 6.5091 0.865994 8.05575 0.875055 9.77892L0.970192 24.7094C0.999639 29.2456 2.70757 33.6186 5.78139 37.0253C7.18579 38.583 8.98433 39.92 11.2857 41.1137L19.3882 45.3057ZM17.263 27.7451C17.5982 28.0672 18.0331 28.2261 18.4681 28.2217C18.903 28.2195 19.3356 28.0562 19.6663 27.7297L28.4393 19.0807C29.0985 18.4298 29.0917 17.384 28.4257 16.742C27.7575 16.0999 26.6815 16.1043 26.0224 16.7552L18.4431 24.226L15.3399 21.243C14.6717 20.6009 13.598 20.6075 12.9365 21.2584C12.2774 21.9093 12.2842 22.9551 12.9524 23.5971L17.263 27.7451Z"
+													fill="#69B99D" />
+											</svg>
+											<h3 class="advantage__item-title">Extra security</h3>
+											<p class="advantage__item-text">You can connect with potential tenants without having
+												to
+												share your phone number. We also require all users to register to validate their
+												legitimacy.</p>
+										</li>
+										<li class="advantage__item">
+											<svg width="46" height="44" viewBox="0 0 46 44" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M36.3166 27.2202C35.7339 27.785 35.4661 28.6017 35.5989 29.4027L37.5991 40.4727C37.7679 41.411 37.3719 42.3605 36.5866 42.9027C35.8171 43.4652 34.7934 43.5327 33.9541 43.0827L23.9889 37.8852C23.6424 37.7007 23.2576 37.6017 22.8639 37.5905H22.2541C22.0426 37.622 21.8356 37.6895 21.6466 37.793L11.6791 43.0152C11.1864 43.2627 10.6284 43.3505 10.0816 43.2627C8.74962 43.0107 7.86087 41.7417 8.07911 40.403L10.0816 29.333C10.2144 28.5252 9.94662 27.704 9.36386 27.1302L1.23912 19.2552C0.559616 18.596 0.323366 17.606 0.633866 16.7127C0.935366 15.8217 1.70487 15.1715 2.63412 15.0252L13.8166 13.403C14.6671 13.3152 15.4141 12.7977 15.7966 12.0327L20.7241 1.93024C20.8411 1.70524 20.9919 1.49824 21.1741 1.32274L21.3766 1.16524C21.4824 1.04824 21.6039 0.951494 21.7389 0.872744L21.9841 0.782744L22.3666 0.625244H23.3139C24.1599 0.712994 24.9046 1.21924 25.2939 1.97524L30.2866 12.0327C30.6466 12.7685 31.3464 13.2792 32.1541 13.403L43.3366 15.0252C44.2816 15.1602 45.0714 15.8127 45.3841 16.7127C45.6789 17.615 45.4246 18.605 44.7316 19.2552L36.3166 27.2202Z"
+													fill="#69B99D" />
+											</svg>
+											<h3 class="advantage__item-title">Luxury</h3>
+											<p class="advantage__item-text">Find out how we provide the highest standard of
+												professional property management to give you all the benefits of property.</p>
+										</li>
+										<li class="advantage__item">
+											<svg width="46" height="42" viewBox="0 0 46 42" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M40.4622 21.0022C40.4622 22.8326 41.9653 24.3219 43.8125 24.3219C44.744 24.3219 45.5 25.071 45.5 25.9939V32.0157C45.5 37.1077 41.3195 41.25 36.1805 41.25H9.82175C4.68275 41.25 0.5 37.1077 0.5 32.0157V25.9939C0.5 25.071 1.256 24.3219 2.1875 24.3219C4.037 24.3219 5.54 22.8326 5.54 21.0022C5.54 19.2187 4.09775 17.8766 2.1875 17.8766C1.73975 17.8766 1.31225 17.7004 0.995 17.3861C0.67775 17.0717 0.5 16.6459 0.5 16.2045L0.5045 9.98657C0.5045 4.89453 4.685 0.75 9.824 0.75H36.176C41.315 0.75 45.4977 4.89453 45.4977 9.98657L45.5 16.0105C45.5 16.4519 45.3223 16.88 45.0073 17.1921C44.69 17.5065 44.2625 17.6826 43.8125 17.6826C41.9653 17.6826 40.4622 19.1719 40.4622 21.0022ZM28.0669 22.4582L30.7197 19.8988C31.1809 19.4573 31.3407 18.8063 31.1404 18.2044C30.9424 17.6024 30.4249 17.1744 29.7994 17.0874L26.1342 16.5568L24.4939 13.2662C24.2127 12.6999 23.6412 12.3477 23.0044 12.3454H22.9999C22.3654 12.3454 21.7939 12.6977 21.5082 13.264L19.8679 16.5568L16.2094 17.0852C15.5772 17.1744 15.0597 17.6024 14.8594 18.2044C14.6614 18.8063 14.8212 19.4573 15.2802 19.8988L17.9329 22.4582L17.3074 26.0765C17.1994 26.7008 17.4537 27.3206 17.9712 27.6929C18.2637 27.9002 18.6034 28.0072 18.9477 28.0072C19.2109 28.0072 19.4764 27.9426 19.7194 27.8155L22.9999 26.1078L26.2737 27.811C26.8407 28.112 27.5134 28.0652 28.0287 27.6907C28.5484 27.3206 28.8027 26.7008 28.6947 26.0765L28.0669 22.4582Z"
+													fill="#69B99D" />
+											</svg>
+											<h3 class="advantage__item-title">Best price</h3>
+											<p class="advantage__item-text">Not sure what you should be charging for your property?
+												Let us do the numbers for you—contact us today for a free rental appraisal on your
+												home.</p>
+										</li>
+										<li class="advantage__item">
+											<svg width="40" height="46" viewBox="0 0 40 46" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M0.875 19.215C0.875 8.86526 9.52373 0.5 19.9853 0.5C30.4763 0.5 39.125 8.86526 39.125 19.215C39.125 24.4303 37.2283 29.2722 34.1064 33.376C30.6623 37.9029 26.4174 41.847 21.6392 44.943C20.5457 45.6584 19.5587 45.7124 18.3585 44.943C13.5532 41.847 9.3082 37.9029 5.89362 33.376C2.76946 29.2722 0.875 24.4303 0.875 19.215ZM13.687 19.7977C13.687 23.2649 16.5162 25.9918 19.9852 25.9918C23.4565 25.9918 26.313 23.2649 26.313 19.7977C26.313 16.3576 23.4565 13.4979 19.9852 13.4979C16.5162 13.4979 13.687 16.3576 13.687 19.7977Z"
+													fill="#69B99D" />
+											</svg>
+											<h3 class="advantage__item-title">Strategic location</h3>
+											<p class="advantage__item-text">located in the city center close to the shopping
+												center.
+												Very good for areas surrounded by international education centers, start-up office
+												centers.</p>
+										</li>
+										<li class="advantage__item">
+											<svg width="46" height="46" viewBox="0 0 46 46" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M23.7343 0.971741C24.0936 0.649225 24.5689 0.48017 25.0554 0.501856C35.3398 0.809723 43.9348 8.27555 45.4926 18.2539C45.5024 18.3135 45.5024 18.3743 45.4926 18.4338C45.5261 18.906 45.3665 19.3718 45.0491 19.7282C44.7318 20.0846 44.2827 20.3022 43.8013 20.333L26.5225 21.4725C25.9511 21.5231 25.3844 21.3351 24.9616 20.9546C24.5389 20.574 24.2992 20.0363 24.3015 19.4734L23.1401 2.50096V2.22109C23.1612 1.74375 23.375 1.29426 23.7343 0.971741ZM22.5492 25.9106L37.5256 24.951L37.6275 24.991C38.2706 25.0015 38.8831 25.2623 39.3302 25.7159C39.7773 26.1696 40.0223 26.7789 40.0114 27.4099C39.4213 36.0096 33.1164 43.195 24.5362 45.0461C15.9561 46.8972 7.16039 42.9698 2.94751 35.4063C1.70874 33.2279 0.925931 30.8287 0.645021 28.3495C0.536071 27.6148 0.488368 26.8727 0.502389 26.1305C0.530785 16.986 7.04137 9.09297 16.1512 7.15895C17.254 6.95253 18.3596 7.50315 18.8408 8.49835C18.9606 8.67894 19.0564 8.87375 19.126 9.07809C19.2968 11.7141 19.474 14.3252 19.6503 16.9253C19.7896 18.9787 19.9285 21.0253 20.0633 23.0718C20.0564 23.5539 20.1322 24.0338 20.2875 24.4912C20.6531 25.3912 21.5631 25.9623 22.5492 25.9106Z"
+													fill="#69B99D" />
+											</svg>
+											<h3 class="advantage__item-title">Efficient</h3>
+											<p class="advantage__item-text">Schedule visits to multiple properties at once in one
+												day
+												without having to call them one by one. Check everything and find the best
+												properties
+												for rent</p>
+										</li>
+									</ul>
+
+								</div>
+		</section>
+
+		<!-- about us -->
+		<section class="about">
+								<div class="container">
+									<div class="about__inner">
+										<div class="about__stat-rating">
+											<img src="./img/pic/stars.jpg" alt="">
+											<div class="rating">
+												<svg class="rating__stars" width="28" height="28" viewBox="0 0 28 28" fill="none"
+													xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd"
+														d="M8.22675 0.666504H19.7867C24.3067 0.666504 27.3334 3.83984 27.3334 8.55984V19.4545C27.3334 24.1598 24.3067 27.3332 19.7867 27.3332H8.22675C3.70675 27.3332 0.666748 24.1598 0.666748 19.4545V8.55984C0.666748 3.83984 3.70675 0.666504 8.22675 0.666504ZM13.2401 17.9865L19.5734 11.6532C20.0268 11.1998 20.0268 10.4665 19.5734 9.99984C19.1201 9.5465 18.3734 9.5465 17.9201 9.99984L12.4134 15.5065L10.0801 13.1732C9.62675 12.7198 8.88008 12.7198 8.42675 13.1732C7.97342 13.6265 7.97342 14.3598 8.42675 14.8265L11.6001 17.9865C11.8268 18.2132 12.1201 18.3198 12.4134 18.3198C12.7201 18.3198 13.0134 18.2132 13.2401 17.9865Z"
+														fill="#69B99D" />
+												</svg>
+												<span class="rating__num">4.8</span>
+												<div class="rating__stars-sm">
+													<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12.1699 14.7499C12.05 14.7504 11.9317 14.7221 11.8249 14.6674L7.99995 12.6649L4.17494 14.6674C4.05074 14.7327 3.9107 14.7619 3.77075 14.7516C3.6308 14.7412 3.49655 14.6919 3.38327 14.6091C3.26998 14.5262 3.1822 14.4133 3.12991 14.2831C3.07761 14.1529 3.0629 14.0106 3.08744 13.8724L3.83744 9.64991L0.747444 6.64991C0.651037 6.5537 0.582648 6.43306 0.549615 6.30093C0.516582 6.1688 0.520153 6.03016 0.559944 5.89991C0.603414 5.76661 0.683376 5.64817 0.790757 5.55803C0.898137 5.46788 1.02864 5.40964 1.16744 5.38991L5.44244 4.76741L7.32495 0.919909C7.38636 0.793105 7.48225 0.686165 7.60163 0.611339C7.72101 0.536513 7.85905 0.496826 7.99995 0.496826C8.14084 0.496826 8.27888 0.536513 8.39826 0.611339C8.51764 0.686165 8.61353 0.793105 8.67494 0.919909L10.5799 4.75991L14.8549 5.38241C14.9938 5.40214 15.1243 5.46038 15.2316 5.55053C15.339 5.64067 15.419 5.75911 15.4624 5.89241C15.5022 6.02266 15.5058 6.1613 15.4728 6.29343C15.4397 6.42556 15.3714 6.5462 15.2749 6.64241L12.1849 9.64241L12.9349 13.8649C12.9617 14.0055 12.9477 14.1508 12.8945 14.2837C12.8414 14.4166 12.7513 14.5316 12.6349 14.6149C12.4991 14.7101 12.3356 14.7576 12.1699 14.7499Z"
+															fill="#69B99D" />
+													</svg>
+													<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12.1699 14.7499C12.05 14.7504 11.9317 14.7221 11.8249 14.6674L7.99995 12.6649L4.17494 14.6674C4.05074 14.7327 3.9107 14.7619 3.77075 14.7516C3.6308 14.7412 3.49655 14.6919 3.38327 14.6091C3.26998 14.5262 3.1822 14.4133 3.12991 14.2831C3.07761 14.1529 3.0629 14.0106 3.08744 13.8724L3.83744 9.64991L0.747444 6.64991C0.651037 6.5537 0.582648 6.43306 0.549615 6.30093C0.516582 6.1688 0.520153 6.03016 0.559944 5.89991C0.603414 5.76661 0.683376 5.64817 0.790757 5.55803C0.898137 5.46788 1.02864 5.40964 1.16744 5.38991L5.44244 4.76741L7.32495 0.919909C7.38636 0.793105 7.48225 0.686165 7.60163 0.611339C7.72101 0.536513 7.85905 0.496826 7.99995 0.496826C8.14084 0.496826 8.27888 0.536513 8.39826 0.611339C8.51764 0.686165 8.61353 0.793105 8.67494 0.919909L10.5799 4.75991L14.8549 5.38241C14.9938 5.40214 15.1243 5.46038 15.2316 5.55053C15.339 5.64067 15.419 5.75911 15.4624 5.89241C15.5022 6.02266 15.5058 6.1613 15.4728 6.29343C15.4397 6.42556 15.3714 6.5462 15.2749 6.64241L12.1849 9.64241L12.9349 13.8649C12.9617 14.0055 12.9477 14.1508 12.8945 14.2837C12.8414 14.4166 12.7513 14.5316 12.6349 14.6149C12.4991 14.7101 12.3356 14.7576 12.1699 14.7499Z"
+															fill="#69B99D" />
+													</svg>
+													<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12.1699 14.7499C12.05 14.7504 11.9317 14.7221 11.8249 14.6674L7.99995 12.6649L4.17494 14.6674C4.05074 14.7327 3.9107 14.7619 3.77075 14.7516C3.6308 14.7412 3.49655 14.6919 3.38327 14.6091C3.26998 14.5262 3.1822 14.4133 3.12991 14.2831C3.07761 14.1529 3.0629 14.0106 3.08744 13.8724L3.83744 9.64991L0.747444 6.64991C0.651037 6.5537 0.582648 6.43306 0.549615 6.30093C0.516582 6.1688 0.520153 6.03016 0.559944 5.89991C0.603414 5.76661 0.683376 5.64817 0.790757 5.55803C0.898137 5.46788 1.02864 5.40964 1.16744 5.38991L5.44244 4.76741L7.32495 0.919909C7.38636 0.793105 7.48225 0.686165 7.60163 0.611339C7.72101 0.536513 7.85905 0.496826 7.99995 0.496826C8.14084 0.496826 8.27888 0.536513 8.39826 0.611339C8.51764 0.686165 8.61353 0.793105 8.67494 0.919909L10.5799 4.75991L14.8549 5.38241C14.9938 5.40214 15.1243 5.46038 15.2316 5.55053C15.339 5.64067 15.419 5.75911 15.4624 5.89241C15.5022 6.02266 15.5058 6.1613 15.4728 6.29343C15.4397 6.42556 15.3714 6.5462 15.2749 6.64241L12.1849 9.64241L12.9349 13.8649C12.9617 14.0055 12.9477 14.1508 12.8945 14.2837C12.8414 14.4166 12.7513 14.5316 12.6349 14.6149C12.4991 14.7101 12.3356 14.7576 12.1699 14.7499Z"
+															fill="#69B99D" />
+													</svg>
+													<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12.1699 14.7499C12.05 14.7504 11.9317 14.7221 11.8249 14.6674L7.99995 12.6649L4.17494 14.6674C4.05074 14.7327 3.9107 14.7619 3.77075 14.7516C3.6308 14.7412 3.49655 14.6919 3.38327 14.6091C3.26998 14.5262 3.1822 14.4133 3.12991 14.2831C3.07761 14.1529 3.0629 14.0106 3.08744 13.8724L3.83744 9.64991L0.747444 6.64991C0.651037 6.5537 0.582648 6.43306 0.549615 6.30093C0.516582 6.1688 0.520153 6.03016 0.559944 5.89991C0.603414 5.76661 0.683376 5.64817 0.790757 5.55803C0.898137 5.46788 1.02864 5.40964 1.16744 5.38991L5.44244 4.76741L7.32495 0.919909C7.38636 0.793105 7.48225 0.686165 7.60163 0.611339C7.72101 0.536513 7.85905 0.496826 7.99995 0.496826C8.14084 0.496826 8.27888 0.536513 8.39826 0.611339C8.51764 0.686165 8.61353 0.793105 8.67494 0.919909L10.5799 4.75991L14.8549 5.38241C14.9938 5.40214 15.1243 5.46038 15.2316 5.55053C15.339 5.64067 15.419 5.75911 15.4624 5.89241C15.5022 6.02266 15.5058 6.1613 15.4728 6.29343C15.4397 6.42556 15.3714 6.5462 15.2749 6.64241L12.1849 9.64241L12.9349 13.8649C12.9617 14.0055 12.9477 14.1508 12.8945 14.2837C12.8414 14.4166 12.7513 14.5316 12.6349 14.6149C12.4991 14.7101 12.3356 14.7576 12.1699 14.7499Z"
+															fill="#69B99D" />
+													</svg>
+													<svg width="16" height="15" viewBox="0 0 16 15" fill="none"
+														xmlns="http://www.w3.org/2000/svg">
+														<path
+															d="M12.1699 14.7499C12.05 14.7504 11.9317 14.7221 11.8249 14.6674L7.99995 12.6649L4.17494 14.6674C4.05074 14.7327 3.9107 14.7619 3.77075 14.7516C3.6308 14.7412 3.49655 14.6919 3.38327 14.6091C3.26998 14.5262 3.1822 14.4133 3.12991 14.2831C3.07761 14.1529 3.0629 14.0106 3.08744 13.8724L3.83744 9.64991L0.747444 6.64991C0.651037 6.5537 0.582648 6.43306 0.549615 6.30093C0.516582 6.1688 0.520153 6.03016 0.559944 5.89991C0.603414 5.76661 0.683376 5.64817 0.790757 5.55803C0.898137 5.46788 1.02864 5.40964 1.16744 5.38991L5.44244 4.76741L7.32495 0.919909C7.38636 0.793105 7.48225 0.686165 7.60163 0.611339C7.72101 0.536513 7.85905 0.496826 7.99995 0.496826C8.14084 0.496826 8.27888 0.536513 8.39826 0.611339C8.51764 0.686165 8.61353 0.793105 8.67494 0.919909L10.5799 4.75991L14.8549 5.38241C14.9938 5.40214 15.1243 5.46038 15.2316 5.55053C15.339 5.64067 15.419 5.75911 15.4624 5.89241C15.5022 6.02266 15.5058 6.1613 15.4728 6.29343C15.4397 6.42556 15.3714 6.5462 15.2749 6.64241L12.1849 9.64241L12.9349 13.8649C12.9617 14.0055 12.9477 14.1508 12.8945 14.2837C12.8414 14.4166 12.7513 14.5316 12.6349 14.6149C12.4991 14.7101 12.3356 14.7576 12.1699 14.7499Z"
+															fill="#69B99D" />
+													</svg>
+												</div>
+												<span class="rating__trust">Trusted on</span>
+												<span class="rating__rev">500+ Reviews</span>
+											</div>
+											<div class="stat">
+												<span class="stat__num">250+ <span>Property Sale</span></span>
+												<span class="stat__num">550+ <span>Apartmen Rent</span></span>
+											</div>
+										</div>
+										<div class="about__title-block">
+											<h2 class="about__section-name section-name">ABOUT US</h2>
+											<p class="about__title title">How much is your property worth now?</p>
+											<h3 class="about__subtitle subtitle">We have built our reputation as true local area
+												experts. We have gained more knowledge about buyer interests, our neighborhood and
+												the
+												market than any other brand because we live locally and work for local people.</h3>
+											<a class="about__button button" href="#">Learn More</a>
+										</div>
+									</div>
+								</div>
+		</section>
+
+		<!-- testimonials -->
+		<section class="testi">
+								<div class="container">
+									<h2 class="testi__section-name section-name">CUSTOMER TESTIMONIAL</h2>
+									<div class="testi__title-box">
+										<h3 class="testi__title title">Peopel say about us?</h3>
+										<a class="testi__learn-more learn-more" href="#">
+											Learn more
+											<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+													d="M20.0001 10C20.0001 15.52 15.5101 20 10.0001 20L9.72036 19.9962C4.32954 19.8478 0.00012207 15.4264 0.00012207 10C0.00012207 4.49 4.48012 0 10.0001 0C15.5101 0 20.0001 4.49 20.0001 10ZM8.02012 6C7.73012 6.3 7.73012 6.77 8.03012 7.06L10.9801 10L8.03012 12.94C7.73012 13.23 7.73012 13.71 8.02012 14C8.32012 14.3 8.79012 14.3 9.08012 14L12.5701 10.53C12.7101 10.39 12.7901 10.2 12.7901 10C12.7901 9.8 12.7101 9.61 12.5701 9.47L9.08012 6C8.94012 5.85 8.75012 5.78 8.56012 5.78C8.36012 5.78 8.17012 5.85 8.02012 6Z"
+													fill="#69B99D" />
+											</svg>
+										</a>
+									</div>
+									<ul class="testi__list">
+										<li class="testi__item">
+											<svg width="42" height="34" viewBox="0 0 42 34" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0 34V22.625C0 18.375 0.752239 14.4583 2.25672 10.875C3.76119 7.29167 6.31045 3.66667 9.90448 0L16.4239 5.125C14.3343 7.20834 12.7463 9.16667 11.6597 11C10.5731 12.8333 9.86269 14.7083 9.52836 16.625H17.5522V34H0ZM24.4478 34V22.625C24.4478 18.375 25.2 14.4583 26.7045 10.875C28.209 7.29167 30.7582 3.66667 34.3522 0L40.8716 5.125C38.7821 7.20834 37.194 9.16667 36.1075 11C35.0209 12.8333 34.3104 14.7083 33.9761 16.625H42V34H24.4478Z"
+													fill="#F5F5F5" />
+											</svg>
+											<h4 class="quote__title">It proved to be exactly the kind of home we wanted.</h4>
+											<p class="quote__par">We wish to express our thanks for your hard work in finding us a
+												temporary home, which proved to be exactly what we wanted.</p>
+											<div class="quote__user-block">
+												<img src="./img/pic/quot1.jpg" alt="">
+												<div class="quote__user-content">
+													<div class="quote__user-name">Jaydon Aminoff</div>
+													<div class="quote__user-pos">UX Designer</div>
+												</div>
+											</div>
+										</li>
+										<li class="testi__item">
+											<svg width="42" height="34" viewBox="0 0 42 34" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0 34V22.625C0 18.375 0.752239 14.4583 2.25672 10.875C3.76119 7.29167 6.31045 3.66667 9.90448 0L16.4239 5.125C14.3343 7.20834 12.7463 9.16667 11.6597 11C10.5731 12.8333 9.86269 14.7083 9.52836 16.625H17.5522V34H0ZM24.4478 34V22.625C24.4478 18.375 25.2 14.4583 26.7045 10.875C28.209 7.29167 30.7582 3.66667 34.3522 0L40.8716 5.125C38.7821 7.20834 37.194 9.16667 36.1075 11C35.0209 12.8333 34.3104 14.7083 33.9761 16.625H42V34H24.4478Z"
+													fill="#F5F5F5" />
+											</svg>
+											<h4 class="quote__title">Nobody knows Portland and the peninsula better than David.
+											</h4>
+											<p class="quote__par">My wife and I had a dream of downsizing from our house in Cape
+												Elizabeth into a small condo closer to where we work and play in Portland. </p>
+											<div class="quote__user-block">
+												<img src="./img/pic/quot2.jpg" alt="">
+												<div class="quote__user-content">
+													<div class="quote__user-name">Alfredo Donin</div>
+													<div class="quote__user-pos">UI Designer</div>
+												</div>
+											</div>
+										</li>
+										<li class="testi__item">
+											<svg width="42" height="34" viewBox="0 0 42 34" fill="none"
+												xmlns="http://www.w3.org/2000/svg">
+												<path
+													d="M0 34V22.625C0 18.375 0.752239 14.4583 2.25672 10.875C3.76119 7.29167 6.31045 3.66667 9.90448 0L16.4239 5.125C14.3343 7.20834 12.7463 9.16667 11.6597 11C10.5731 12.8333 9.86269 14.7083 9.52836 16.625H17.5522V34H0ZM24.4478 34V22.625C24.4478 18.375 25.2 14.4583 26.7045 10.875C28.209 7.29167 30.7582 3.66667 34.3522 0L40.8716 5.125C38.7821 7.20834 37.194 9.16667 36.1075 11C35.0209 12.8333 34.3104 14.7083 33.9761 16.625H42V34H24.4478Z"
+													fill="#F5F5F5" />
+											</svg>
+											<h4 class="quote__title">He keeps his client’s best interests in sharp focus</h4>
+											<p class="quote__par">After working with David to sell my home in 2013, I was convinced
+												that he’s the only realtor I’ll ever need. Since then, I’ve bought two properties
+												and sold one.</p>
+											<div class="quote__user-block">
+												<img src="./img/pic/quot3.jpg" alt="">
+												<div class="quote__user-content">
+													<div class="quote__user-name">Makenna Korsgaard</div>
+													<div class="quote__user-pos">UX Researcher</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+
+								</div>
+		</section>
+
+		<!-- footer -->
+		<footer class="footer">
+								<div class="container">
+									<div class="footer__inner">
+										<div class="footer__review">
+											<a class="menu__logo" href="#">
+												<span>M</span>
+												Mulih
+											</a>
+											<p class="footer__review-txt">We have built our reputation as true local area experts.
+											</p>
+											<form class="footer__form">
+												<label class="footer__form-label" for="letter">Newsletter</label>
+												<div class="footer__form-send">
+													<input class="footer__form-input" type="email" name="letter" id="letter"
+														placeholder="Input your email">
+													<button class="footer__form-btn" type="submit">Send</button>
+												</div>
+											</form>
+										</div>
+										<nav class="footer__menu">
+											<ul class="footer__menu-list">
+												<li class="footer__menu-item">
+													Service
+													<a class="footer__item-link" href="#">About us</a>
+													<a class="footer__item-link" href="#">Careers</a>
+													<a class="footer__item-link" href="#">Terms & Conditions</a>
+													<a class="footer__item-link" href="#">Privacy & Policy</a>
+												</li>
+												<li class="footer__menu-item">
+													Community
+													<a class="footer__item-link" href="#">Find agents</a>
+													<a class="footer__item-link" href="#">Lifestyle</a>
+													<a class="footer__item-link" href="#">Legal notic</a>
+												</li>
+												<li class="footer__menu-item">
+													Follow us on
+													<ul class="menu__socials">
+														<li class="menu__socials-item">
+															<a class="menu__socials-link" href="#">
+																<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M7.00003 4.67874C5.71794 4.67874 4.67861 5.71808 4.67861 7.00017C4.67861 8.28226 5.71794 9.3216 7.00003 9.3216C8.28212 9.3216 9.32146 8.28226 9.32146 7.00017C9.32146 5.71808 8.28212 4.67874 7.00003 4.67874Z"
+																		fill="#29CDB5" />
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		d="M3.26399 0.629792C5.72693 0.354522 8.27315 0.354522 10.7361 0.629792C12.0921 0.781345 13.1858 1.84976 13.345 3.21051C13.6394 5.72837 13.6394 8.27197 13.345 10.7898C13.1858 12.1506 12.0921 13.219 10.7361 13.3705C8.27315 13.6458 5.72693 13.6458 3.26399 13.3705C1.90799 13.219 0.814282 12.1506 0.65513 10.7898C0.360644 8.27197 0.360644 5.72837 0.65513 3.21051C0.814282 1.84976 1.90799 0.781345 3.26399 0.629792ZM10.5715 2.71446C10.177 2.71446 9.85718 3.03425 9.85718 3.42874C9.85718 3.82323 10.177 4.14303 10.5715 4.14303C10.966 4.14303 11.2857 3.82323 11.2857 3.42874C11.2857 3.03425 10.966 2.71446 10.5715 2.71446ZM3.60718 7.00017C3.60718 5.12635 5.12621 3.60731 7.00003 3.60731C8.87386 3.60731 10.3929 5.12635 10.3929 7.00017C10.3929 8.87399 8.87386 10.393 7.00003 10.393C5.12621 10.393 3.60718 8.87399 3.60718 7.00017Z"
+																		fill="#29CDB5" />
+																</svg>
+															</a>
+														</li>
+														<li class="menu__socials-item">
+															<a class="menu__socials-link" href="#">
+																<svg width="16" height="12" viewBox="0 0 16 12" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path fill-rule="evenodd" clip-rule="evenodd"
+																		d="M4.42064 0.92203C6.80326 0.735625 9.1968 0.735625 11.5794 0.922031L13.1799 1.04725C14.0714 1.11699 14.8007 1.78513 14.9481 2.66711C15.3168 4.87389 15.3168 7.12657 14.9481 9.33335C14.8007 10.2153 14.0714 10.8835 13.1799 10.9532L11.5794 11.0784C9.1968 11.2648 6.80326 11.2648 4.42064 11.0784L2.82014 10.9532C1.92866 10.8835 1.19936 10.2153 1.05199 9.33335C0.683272 7.12657 0.683272 4.87389 1.05199 2.66711C1.19936 1.78513 1.92866 1.11699 2.82014 1.04725L4.42064 0.92203ZM6.57144 7.76462V4.23584C6.57144 4.06928 6.75315 3.9664 6.89597 4.05209L9.83662 5.81648C9.97533 5.89971 9.97533 6.10075 9.83662 6.18398L6.89597 7.94837C6.75315 8.03406 6.57144 7.93118 6.57144 7.76462Z"
+																		fill="#29CDB5" />
+																</svg>
+															</a>
+														</li>
+														<li class="menu__socials-item">
+															<a class="menu__socials-link" href="#">
+																<svg width="9" height="16" viewBox="0 0 9 16" fill="none"
+																	xmlns="http://www.w3.org/2000/svg">
+																	<path
+																		d="M8.28573 0.857422H6.14287C5.19567 0.857422 4.28727 1.2337 3.61749 1.90347C2.94772 2.57324 2.57145 3.48165 2.57145 4.42885V6.57171H0.428589V9.42885H2.57145V15.1431H5.42859V9.42885H7.57145L8.28573 6.57171H5.42859V4.42885C5.42859 4.23941 5.50384 4.05773 5.6378 3.92377C5.77175 3.78982 5.95343 3.71456 6.14287 3.71456H8.28573V0.857422Z"
+																		fill="#29CDB5" />
+																</svg>
+															</a>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</nav> <!-- footer-menu -->
+									</div> <!-- footer-inner -->
+								</div> <!-- container -->
+		</footer>
+
+	</div> <!-- main -->
+<script>
+	(function () {
+		const formBuy = document.querySelector(".form-buy");
+		const formRent = document.querySelector(".form-rent");
+		const btnRent = document.querySelector(".btn-rent");
+		const btnBuy = document.querySelector(".btn-buy");
+
+		btnRent.addEventListener("click", function (e) {
+			e.preventDefault()
+			formRent.classList.remove('form-close');
+			formBuy.classList.add('form-close');
+			(this).classList.add('active');
+			btnBuy.classList.remove('active');
+		});
+		btnBuy.addEventListener("click", function (e) {
+			e.preventDefault()
+			formBuy.classList.remove('form-close');
+			formRent.classList.add('form-close');
+			(this).classList.add('active');
+			btnRent.classList.remove('active');
+		})
+	}());
+</script>
 
 </body>
+
 </html>
